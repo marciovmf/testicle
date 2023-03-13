@@ -46,6 +46,8 @@ Passes if expression expr is true. Fails otherwise.
 ### SMOL_TEST_EXPECT_FALSE( exp )
 Passes if expression expr is false. Fails otherwise.
 
+### SMOL_TEST_WAIT_MILLISECONDS( n )
+Will delay the test execution for the n milliseconds.
 
 ## Compiling tests
 This CMake macro is used to create test suites, or standalone executables that
@@ -78,16 +80,13 @@ SMOL_TEST_ADD_EXECUTABLE(general_tests sample/general_tests.cpp)
 
 ## Running Tests
 
-It's possible to run the test suites directly or via Cmake with the --target test or even invoking CTest directly in the build directory.
+It's possible to run the test suites directly or via Cmake with the --target test or even invoking CTest directly in the build directory.  
+Test suites tests will exit the process with exit value 0 if the all test fails or the number of failed tests otherwise.
 
-Running the standalone test executables
-
+Running the standalone test executables  
 ![Standalone Execution](standalone_test_execution.png)
 
-Running all the tests via Ctest
-
+Running all the tests via Ctest  
 ![Ctest Execution](ctest_batch_execution.png)
-
-Note that the standalone tests will exit the process with exit value 0 if the all test fails or the number of failed tests otherwise.
 
 
