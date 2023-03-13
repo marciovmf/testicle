@@ -76,3 +76,16 @@ SMOL_TEST_ADD_EXECUTABLE(slow_tests sample/slow_tests.cpp)
 SMOL_TEST_ADD_EXECUTABLE(general_tests sample/general_tests.cpp)
 ````
 
+## Running Tests
+
+It's possible to run the test suites directly or via Cmake with the --target test or even invoking CTest directly in the build directory.
+
+Running the standalone test executables
+![Standalone Execution](standalone_test_execution.png)
+
+Running all the tests via Ctest
+![Ctest Execution](ctest_batch_execution.png)
+
+Note that the standalone tests will exit the process with exit value 0 if the all test fails or the number of failed tests otherwise.
+
+
