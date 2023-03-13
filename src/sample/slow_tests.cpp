@@ -1,0 +1,19 @@
+#include <smol_test.h>
+
+SMOL_TEST(slow_operation_1)
+{
+  SMOL_TEST_WAIT_MILLISECONDS(100);
+  SMOL_TEST_SUCCESS;
+}
+
+SMOL_TEST(slow_operation_2)
+{
+  SMOL_TEST_WAIT_MILLISECONDS(300);
+  SMOL_TEST_SUCCESS;
+}
+
+SMOL_TEST(slow_operation_3)
+{
+  SMOL_TEST_WAIT_MILLISECONDS(500);
+  SMOL_TEST_SUCCESS;
+}
