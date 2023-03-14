@@ -1,5 +1,6 @@
-# smol_test
-SMOL_TEST is a minimalist test framework I developed for testing features on my toy [game engine](https://github.com/marciovmf/smol)
+# What ?
+TESTticle is a minimalist test framework I developed for testing features on my toy game engine [SMOL](https://github.com/marciovmf/smol).
+It was initialy called SMOL_TEST but sounds TESTicle is undeniably more professional.
 
 ## Why
 Test frameworks are usually feature rich but also bloated and unnecessarily complex, so I decided to create something tiny especially for my needs.
